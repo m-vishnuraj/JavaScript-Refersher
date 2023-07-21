@@ -20,3 +20,20 @@
 // ! const
 // * re declaration and reassign is not possible
 const name = "Vishnu";
+
+// ! CONDITIONAL STATEMENTS
+
+// * if else
+
+// const age = 18;
+
+// if (age > 18) {
+//   alert("You are eligible");
+// } else {
+//   alert("You are not eligible");
+// }
+
+// ! TERNARY OPERATOR
+const age = 18;
+
+age > 17 ? alert("You are eligible") : alert("You are not eligible");
