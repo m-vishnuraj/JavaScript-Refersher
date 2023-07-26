@@ -19,7 +19,7 @@
 
 // ! const
 // * re declaration and reassign is not possible
-const name = "Vishnu";
+// const name = "Vishnu";
 
 // ! CONDITIONAL STATEMENTS
 
@@ -40,22 +40,57 @@ const name = "Vishnu";
 
 // ! MAP METHOD
 
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-const double = numbers.map((numbers) => {
-  return numbers * 2;
-});
+// const double = numbers.map((numbers) => {
+//   return numbers * 2;
+// });
 
-console.log(double);
+// console.log(double);
 
 // ! FILTER METHOD
 
-const ages = [18, 19, 20, 21, 22, 23, 24, 25];
+// const ages = [18, 19, 20, 21, 22, 23, 24, 25];
 
-// above 20
+//* above 20
 
-const above20 = ages.filter((age) => {
-  return age >= 20;
-});
+// const above20 = ages.filter((age) => {
+//   return age >= 20;
+// });
 
-console.log(above20);
+// console.log(above20);
+
+// !SPREAD OPERATOR
+
+const names = ["Vishnu", "Ram", "Krishna"];
+
+const newNames = [...names, "Rama", "Krishna"];
+
+console.log(newNames);
+
+const numbers = [1, 2, 3, 4, 5];
+
+const newNumbers = [...numbers, 6, 7, 8, 9, 10];
+
+console.log(newNumbers);
+
+// ********** OBJECTS **********
+
+const person = {
+  name: "Vishnu",
+  age: 18,
+};
+
+const newPerson = {
+  ...person,
+  place: "Kerala",
+};
+
+console.log(newPerson);
+
+// ! REST OPERATOR
+
+const user = (name, age, ...hobbies) => {
+  console.log(name, age, hobbies);
+};
+user("Vishnu", 18, "Coding", "Reading", "Writing");
